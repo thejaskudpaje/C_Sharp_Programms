@@ -24,7 +24,7 @@ namespace C_Sharp_Programms.String
             {
                 string s2 = "";
                 char[]ca = ar[i].ToCharArray();
-                bool res = Check_char_present(ca);
+                bool res = Check_Num_present(ca);
                 if (res == false)
                 {
                     int m = 0;
@@ -45,12 +45,11 @@ namespace C_Sharp_Programms.String
 
                 }
                 output = output +" "+ s2;
-               
             }
             Console.WriteLine(output);
 
         }
-        public bool Check_char_present(char[]ar)
+        public bool Check_Num_present(char[]ar)
         {
             bool flag = true;
             for(int i = 0; i < ar.Length; i++)
